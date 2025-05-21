@@ -1,0 +1,66 @@
+.ticket-create {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    h2 {
+        color: #333;
+        margin-bottom: 1.5rem;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        resize: vertical;
+    }
+
+    button {
+        background-color: #0056b3;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+
+        &:hover {
+            background-color: #004494;
+        }
+
+        &:disabled {
+            background-color: #cccccc;
+        }
+    }
+
+    .error-message {
+        color: #dc3545;
+        margin-top: 1rem;
+        padding: 0.75rem;
+        border: 1px solid #dc3545;
+        border-radius: 4px;
+    }
+
+    .response-section {
+        margin-top: 2rem;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 4px;
+
+        h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+    }
+} 
