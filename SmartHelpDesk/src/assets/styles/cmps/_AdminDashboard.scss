@@ -1,0 +1,109 @@
+.admin-dashboard {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .filter-controls {
+        margin-bottom: 2rem;
+        display: flex;
+        gap: 1rem;
+
+        button {
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: white;
+            cursor: pointer;
+
+            &.active {
+                background: #0056b3;
+                color: white;
+                border-color: #0056b3;
+            }
+        }
+    }
+
+    .tickets-list {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .ticket-card {
+        background: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+        &.escalated {
+            border-left: 4px solid #dc3545;
+        }
+
+        &.resolved {
+            border-left: 4px solid #28a745;
+        }
+
+        .ticket-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+
+            .status {
+                padding: 0.25rem 0.5rem;
+                border-radius: 4px;
+                font-size: 0.875rem;
+
+                &.escalated {
+                    background: #dc354522;
+                    color: #dc3545;
+                }
+
+                &.resolved {
+                    background: #28a74522;
+                    color: #28a745;
+                }
+            }
+        }
+
+        .ticket-content {
+            p {
+                margin-bottom: 1rem;
+                line-height: 1.5;
+            }
+        }
+
+        form {
+            margin-top: 1rem;
+
+            textarea {
+                width: 100%;
+                padding: 0.75rem;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                margin-bottom: 1rem;
+                min-height: 100px;
+            }
+
+            .form-actions {
+                display: flex;
+                gap: 1rem;
+
+                button {
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+
+                    &[type="submit"] {
+                        background: #0056b3;
+                        color: white;
+                        border: none;
+                    }
+
+                    &[type="button"] {
+                        background: white;
+                        border: 1px solid #ddd;
+                    }
+                }
+            }
+        }
+    }
+} 
