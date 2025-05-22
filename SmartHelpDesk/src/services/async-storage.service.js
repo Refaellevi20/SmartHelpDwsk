@@ -48,6 +48,11 @@ function remove(entityType, entityId) {
     })
 }
 
+<<<<<<< HEAD
+=======
+// Private functions
+
+>>>>>>> 11bf7216d4f71d7a94a05b33e6a70334e185488b
 function _save(entityType, entities) {
     localStorage.setItem(entityType, JSON.stringify(entities))
 }
